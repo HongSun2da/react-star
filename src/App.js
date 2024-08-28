@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      시작
+      설정시작
     </div>
   );
 }
