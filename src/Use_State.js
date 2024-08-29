@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 function Use_State() {
+  console.log('Use_State 시작 ============');
+
   const [time, setTime] = useState(1);
 
   const handleClick = () => {
@@ -12,12 +14,11 @@ function Use_State() {
     }
     setTime(newTime);
   }
-  
-  console.log('App 업데이트!')
 
+  console.log('Use_State 종료 ============');
   return (
     <div>
-      <h2>1. useState 사용법</h2>
+      <h2>1. useState - 시간증가</h2>
      
       <span>현재 시간: {time}시</span>
       <button onClick={handleClick}>Update</button>

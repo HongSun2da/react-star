@@ -5,12 +5,16 @@ import reportWebVitals from './reportWebVitals';
 
 import App from './App';
 import Use_State from './Use_State';
+import Use_State2 from './Use_State2';
+import Use_Effect from './Use_Effect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
     <Use_State />
+    <Use_State2 />
+    <Use_Effect />
   </React.StrictMode>
 );
 
