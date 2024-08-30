@@ -12,6 +12,7 @@ import Use_Ref from './Use_Ref';
 import Use_Ref2 from './Use_Ref2';
 import Use_Ref3 from './Use_Ref3';
 import Use_Ref4 from './Use_Ref4';
+import Use_Context from './Use_Context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,6 +27,7 @@ root.render(
       <Use_Ref2 />
       <Use_Ref3 />
       <Use_Ref4 />
+      <Use_Context />
     </div>
   //</React.StrictMode>
 );
