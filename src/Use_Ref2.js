@@ -24,7 +24,7 @@ function Use_Ref2() {
   return (
     <div>
       <h2>6. Use_Ref2 - 저장공간 비교(변수)</h2>
-     
+      <hr />
       <div>Ref: {countRef.current}</div>
       <div>Val: {countVal}</div>
       <button onClick={increaseRef}>Ref 올려</button>

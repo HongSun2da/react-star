@@ -13,6 +13,10 @@ import Use_Ref2 from './Use_Ref2';
 import Use_Ref3 from './Use_Ref3';
 import Use_Ref4 from './Use_Ref4';
 import Use_Context from './Use_Context';
+import Use_Memo from './Use_Memo';
+import Use_Memo2 from './Use_Memo2';
+import Use_Callback from './Use_Callback';
+import Use_Callback2 from './Use_Callback2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +32,10 @@ root.render(
       <Use_Ref3 />
       <Use_Ref4 />
       <Use_Context />
+      <Use_Memo />
+      <Use_Memo2 />
+      <Use_Callback />
+      <Use_Callback2 />
     </div>
   //</React.StrictMode>
 );

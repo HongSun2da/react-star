@@ -18,7 +18,8 @@ function Use_Ref() {
   return (
     <div>
       <h2>5. Use_Ref - 저장공간</h2>
-     
+      <hr />
+      
       <div>State: {count}</div>
       <div>Ref: {countRef.current}</div>
       <button onClick={incresaseCountState}>State 올려</button>

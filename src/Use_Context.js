@@ -12,6 +12,7 @@ function Use_Context() {
   return (
     <div>
       <h2>9. useContext - 전역 공유공간</h2>
+      <hr />
       <UserContext.Provider value={"접속사용자"}>
         <ThemeContext.Provider value={{isDark, setIsDark}}>
           <Page></Page>

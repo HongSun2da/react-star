@@ -33,7 +33,8 @@ function Use_State2() {
   return (
     <div>
       <h2>2. useState - name List</h2>
-
+      <hr />
+      
       <input type="text" value={input} onChange={handleInputChange}></input>
       <button onClick={handleUpload}>Upload</button>
       {names.map((name, idx) => {

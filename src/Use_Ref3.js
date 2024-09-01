@@ -19,7 +19,7 @@ function Use_Ref3() {
   return (
     <div>
       <h2>7. Use_Ref3 - 무한루프 함정</h2>
-
+      <hr />
       <div>Count: {count}</div>
       <button onClick={() => {setCount(count + 1)}}>올려</button>
     </div>

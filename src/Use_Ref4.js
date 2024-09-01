@@ -18,7 +18,7 @@ function Use_Ref4() {
   return (
     <div>
       <h2>8. Use_Ref4 - DOM 요소접근</h2>
-
+      <hr />
       <input ref={inputRef} type='text' placeholder='username'></input>
       <button onClick={login}>로그인</button>
     </div>

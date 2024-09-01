@@ -19,7 +19,8 @@ function Use_State() {
   return (
     <div>
       <h2>1. useState - 시간증가</h2>
-     
+      <hr />
+      
       <span>현재 시간: {time}시</span>
       <button onClick={handleClick}>Update</button>
     </div>

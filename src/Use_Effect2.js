@@ -10,6 +10,7 @@ function Use_Effect2() {
   return (
     <div>
       <h2>4. Use_Effect2 - useEffect 정리하기</h2>
+      <hr />
       {showTimer && <Timer />}
       <button onClick={() => setShowTimer(!showTimer)}>Toggle Timer</button>
     </div>

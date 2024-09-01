@@ -34,7 +34,7 @@ function Use_Effect() {
   return (
     <div>
       <h2>3. Use_Effect - 최초, 매번, 변경시</h2>
-
+      <hr />
       <button onClick={handleCountUpdate}>Update</button>      
       <span>count: {count}</span>
       <br/>
