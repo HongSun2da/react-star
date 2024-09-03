@@ -18,6 +18,7 @@ import Use_Memo2 from './Use_Memo2';
 import Use_Callback from './Use_Callback';
 import Use_Callback2 from './Use_Callback2';
 import Use_Reducer from './Use_Reducer';
+import Use_Reducer2 from './Use_Reducer2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -38,6 +39,7 @@ root.render(
       <Use_Callback />
       <Use_Callback2 />
       <Use_Reducer />
+      <Use_Reducer2 />
     </div>
   //</React.StrictMode>
 );
