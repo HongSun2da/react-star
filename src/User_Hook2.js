@@ -4,7 +4,7 @@ const baseUrl = 'https://jsonplaceholder.typicode.com';
 
 function User_Hook2() {
   console.log('User_Hook2 시작 ============');
-  const {data, fetchUrl} = useFetch(baseUrl, '');
+  const {data, fetchUrl} = useFetch(baseUrl, 'users');
 
   console.log('User_Hook2 종료 ============');
   return (
