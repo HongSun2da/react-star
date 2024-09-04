@@ -23,6 +23,8 @@ import React_Memo from './React_Memo';
 import React_Memo2 from './React_Memo2';
 import User_Hook from './User_Hook';
 import User_Hook2 from './User_Hook2';
+import Use_Id from './Use_Id';
+import Use_LayoutEffect from './Use_LayoutEffect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -48,6 +50,8 @@ root.render(
       <React_Memo2 />
       <User_Hook />
       <User_Hook2 />
+      <Use_Id />
+      <Use_LayoutEffect />
     </div>
   //</React.StrictMode>
 );

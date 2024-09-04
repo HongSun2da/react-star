@@ -4,12 +4,12 @@ const baseUrl = 'https://jsonplaceholder.typicode.com';
 
 function User_Hook2() {
   console.log('User_Hook2 시작 ============');
-  const {data, fetchUrl} = useFetch(baseUrl, 'users');
+  const {data, fetchUrl} = useFetch(baseUrl, 'users/1');
 
   console.log('User_Hook2 종료 ============');
   return (
     <div>
-      <h2>14. Custom Hooks - useFetch</h2>
+      <h2>15. Custom Hooks - useFetch</h2>
       <hr />
       <div style={{border: '2px solid gray', padding: '10px'}}>
         <div>useFetch - ({baseUrl})</div>
