@@ -25,6 +25,8 @@ import User_Hook from './User_Hook';
 import User_Hook2 from './User_Hook2';
 import Use_Id from './Use_Id';
 import Use_LayoutEffect from './Use_LayoutEffect';
+import Debounce from './Debounce';
+import Throttle from './Throttle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -52,6 +54,8 @@ root.render(
       <User_Hook2 />
       <Use_Id />
       <Use_LayoutEffect />
+      <Debounce />
+      <Throttle />
     </div>
   //</React.StrictMode>
 );
