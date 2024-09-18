@@ -4,8 +4,11 @@ import { UserContext } from '../context/UserContext';
 
 function Header() {
   console.log('Header 시작 ============');
-    const {isDark} = useContext(ThemeContext);
-    const username = useContext(UserContext);
+  const {isDark} = useContext(ThemeContext);
+  const username = useContext(UserContext);
+
+  console.log("Header.Context(ThemeContext).isDark: ", isDark);
+  console.log("Header.Context(UserContext).username: ", username);
 
   console.log('Header 종료 ============');
   return (
@@ -15,8 +18,6 @@ function Header() {
         color: isDark ? 'white': 'black',
     }}>
       <h4>Welcom {username}</h4>
-
-
     </header>
   );
 }

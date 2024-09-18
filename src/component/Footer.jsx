@@ -3,11 +3,13 @@ import { ThemeContext } from '../context/ThemeContext';
 
 function Footer() {
   console.log('Footer 시작 ============');
-    const {isDark, setIsDark} = useContext(ThemeContext);
+  const {isDark, setIsDark} = useContext(ThemeContext);
 
-    const toggleTheme = () => {
-        setIsDark(!isDark);
-    };
+  console.log("Footer.Context(ThemeContext).isDark: ", isDark);
+
+  const toggleTheme = () => {
+      setIsDark(!isDark);
+  };
   console.log('Footer 종료 ============');
   return (
     <footer 

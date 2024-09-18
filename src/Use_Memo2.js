@@ -5,6 +5,9 @@ function Use_Memo2() {
   const [number, setNumber] = useState(0);
   const [isKorea, setIsKorea] = useState(true);
 
+  console.log('Use_Memo2.State(number): ', number);
+  console.log('Use_Memo2.State(isKorea): ', isKorea);
+
   // 전달인자가 원시(Primitive)타입(String, Number, Boolean, Null, undefined, BigInt, Symbol)
   // const location = isKorea ? '한국' : '외국';    
   
@@ -20,9 +23,8 @@ function Use_Memo2() {
     };
   }, [isKorea]);
 
-
   useEffect(() => {
-    console.log('Use_Memo2.useEffect 호출...');
+    console.log('Use_Memo2.useEffect(location), ', location);
   }, [location]);
 
   console.log('Use_Memo2 종료 ============');
@@ -30,13 +32,14 @@ function Use_Memo2() {
     <div>
       <h2>11. useMemo - useEffect와 비교(Oject 전달시)</h2>
       <hr />
-
-      <div>하루에 몇끼 먹어요?</div>
-      <input type='number' value={number} onChange={(e) => setNumber(e.target.value)}></input>
-      
-      <div>어느 나라에 있어요??</div>
-      <p>나라: {location.country}</p>
-      <button onClick={() => setIsKorea(!isKorea)}>비행기 타기</button>
+      <div style={{border: '2px solid gray', padding: '10px'}}>
+        <div>하루에 몇끼 먹어요?</div>
+        <input type='number' value={number} onChange={(e) => setNumber(e.target.value)}></input>
+        
+        <div>어느 나라에 있어요??</div>
+        <p>나라: {location.country}</p>
+        <button onClick={() => setIsKorea(!isKorea)}>비행기 타기</button>
+      </div>
     </div>
   );
 }

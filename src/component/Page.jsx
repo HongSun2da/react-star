@@ -11,8 +11,6 @@ function Page() {
   console.log('Page 종료 ============');
   return (
     <div>
-      <h3>전체 Page</h3>
-
       <Header></Header>
       <Content></Content>
       <Footer></Footer>

@@ -4,13 +4,13 @@ const Timer = (props) => {
     console.log('Timer 시작 ============');
     useEffect(() => {
         const timer = setInterval(() => {
-            console.log("타이머 돌아가는중....");
+            console.log("Timer.useEffect.setInterval ... 실행중");
         }, 1000);
         
         // 컴포넌트 언마운트 할때 => setInterval 정리 작업
         return () => {
             clearInterval(timer);    
-            console.log("타이머 종료되었습니다.");
+            console.log("Timer.useEffect.clearInterval ... 종료");
         }
     }, []);
 

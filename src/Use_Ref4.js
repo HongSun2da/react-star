@@ -4,8 +4,10 @@ function Use_Ref4() {
   console.log('Use_Ref4 시작 ============');
   const inputRef = useRef();
 
+  console.log("Use_Ref4.Ref(inputRef): ", inputRef);
+
   useEffect(() => {
-    //console.log(inputRef);
+    console.log("Use_Ref4.useEffect.Ref(inputRef): ", inputRef);
     inputRef.current.focus();
   }, []);
 
@@ -19,8 +21,10 @@ function Use_Ref4() {
     <div>
       <h2>8. Use_Ref4 - DOM 요소접근</h2>
       <hr />
-      <input ref={inputRef} type='text' placeholder='username'></input>
-      <button onClick={login}>로그인</button>
+      <div style={{border: '2px solid gray', padding: '10px'}}>
+        <input ref={inputRef} type='text' placeholder='username'></input>
+        <button onClick={login}>로그인</button>
+      </div>
     </div>
   );
 }

@@ -4,18 +4,22 @@ import { UserContext } from '../context/UserContext';
 
 function Content() {
   console.log('Content 시작 ============');
-    const {isDark} = useContext(ThemeContext);
-    const username = useContext(UserContext);
+  const {isDark} = useContext(ThemeContext);
+  const username = useContext(UserContext);
+
+  console.log("Content.Context(ThemeContext).isDark: ", isDark);
+  console.log("Content.Context(UserContext).username: ", username);    
+
 
   console.log('Content 종료 ============');
-
   return (
     <div className='content'
-    style={{
-        backgroundColor: isDark ? 'black': 'white',
-        color: isDark ? 'white': 'black',
-        height: 100,
-    }}>
+      style={{
+          backgroundColor: isDark ? 'black': 'white',
+          color: isDark ? 'white': 'black',
+          height: 100,
+      }}
+    >
       <p>{username}, 좋은 하루 되세요.</p>
     </div>
   );

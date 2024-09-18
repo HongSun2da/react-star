@@ -8,38 +8,61 @@ function Use_Effect() {
   const handleCountUpdate = () => {
     setCount(count + 1);
   };
+  console.log("useEffect.State(count): ", count);
 
   const handleInputChange = (e) => {
     setName(e.target.value);
   };
+  console.log("useEffect.State(name): ", name);
 
-  // useEffect은 화면 랜더링 이후에 발생 함
+  // 최소 한번 랜더링
   useEffect(() => {
-    console.log("useEffect '최초' 랜더링");
+    console.log("useEffect '[]' Mount");
+    // Clean Up 작업
+    return () => {
+      console.log("useEffect '[]' Unmount");
+    };
   }, []);
 
+  // 매번 랜더링
   useEffect(() => {
-    console.log("useEffect '매번' 랜더링");
+    console.log("useEffect '' Mount");
+    // Clean Up 작업
+    return () => {
+      console.log("useEffect '' Unmount");
+    };
   });
 
+  // [count] 변경시 랜더링
   useEffect(() => {
-    console.log("useEffect 'count 변경시' 랜더링");
+    console.log("useEffect '[count]' Mount");
+    // Clean Up 작업
+    return () => {
+      console.log("useEffect '[count]' Unmount");
+    };
   }, [count]);
 
+  // [name] 변경시 랜더링
   useEffect(() => {
-    console.log("useEffect 'name 변경시' 랜더링");
+    console.log("useEffect '[name]' Mount");
+    // Clean Up 작업
+    return () => {
+      console.log("useEffect '[name]' Unmount");
+    };
   }, [name]);
   
   console.log('Use_Effect 종료 ============');
   return (
     <div>
-      <h2>3. Use_Effect - 최초, 매번, 변경시</h2>
+      <h2>3. Use_Effect - 최초, 매번, State 변경시</h2>
       <hr />
-      <button onClick={handleCountUpdate}>Update</button>      
-      <span>count: {count}</span>
-      <br/>
-      <input type='text' value={name} onChange={handleInputChange}></input>
-      <span>name: {name}</span>
+      <div style={{border: '2px solid gray', padding: '10px'}}>
+        <button onClick={handleCountUpdate}>Update</button>      
+        <span>count: {count}</span>
+        <br/>
+        <input type='text' value={name} onChange={handleInputChange}></input>
+        <span>name: {name}</span>
+      </div>
     </div>
   );
 }
